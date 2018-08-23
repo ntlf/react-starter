@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`todos actions loadTodos should invoke actions correctly 1`] = `
+Array [
+  Object {
+    "payload": Array [
+      Object {
+        "id": "1",
+        "text": "One",
+      },
+      Object {
+        "id": "2",
+        "text": "Two",
+      },
+    ],
+    "type": "LOAD_TODOS",
+  },
+]
+`;
