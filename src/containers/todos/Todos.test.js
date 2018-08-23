@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { Todos } from './index';
+import { Todos } from './Todos';
 
 function setup() {
   return {

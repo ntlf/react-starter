@@ -1,5 +1,5 @@
-import Home from './containers/Todos';
-import NotFound from './components/NotFound';
+import Todos from './containers/todos/Todos';
+import NotFound from './components/not-found/NotFound';
 
 export const publicRoutes = [
   // Login
@@ -7,8 +7,8 @@ export const publicRoutes = [
 
 export const privateRoutes = [
   {
-    path: '/home',
-    component: Home
+    path: '/todos',
+    component: Todos
   },
   {
     component: NotFound

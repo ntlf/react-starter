@@ -11,7 +11,7 @@ import { privateRoutes, publicRoutes } from '../../routes';
 const App = () => (
   <Router>
     <Switch>
-      <Redirect from="/" to="/home" exact />
+      <Redirect from="/" to="/todos" exact />
       {publicRoutes.map((route, i) => (
         // eslint-disable-next-line react/no-array-index-key
         <Route key={i} {...route} />

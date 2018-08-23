@@ -5,6 +5,7 @@
   "rules": {
     "react/jsx-filename-extension": false,
     "import/prefer-default-export": false,
+    "import/no-named-as-default": false,
     "react/require-default-props": false,
     "react/no-array-index-key": "error",
     "no-shadow": 0,

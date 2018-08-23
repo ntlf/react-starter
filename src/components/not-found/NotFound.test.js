@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme/build';
 import renderer from 'react-test-renderer';
-import NotFound from './index';
+import NotFound from './NotFound';
 
 it('renders without crashing', () => {
   shallow(<NotFound />);
