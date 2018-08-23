@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { Home } from './index';
+import { Todos } from './index';
 
 function setup() {
   return {
@@ -11,5 +11,5 @@ function setup() {
 it('renders without crashing', () => {
   const props = setup();
 
-  mount(<Home {...props} />);
+  mount(<Todos {...props} />);
 });

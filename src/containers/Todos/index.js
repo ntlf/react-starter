@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { loadTodos } from '../../actions/todos';
-import styles from './Home.module.scss';
+import styles from './Todos.module.scss';
 
-export class Home extends Component {
+export class Todos extends Component {
   componentDidMount() {
     const { loadTodos } = this.props;
 
@@ -29,6 +30,13 @@ export class Home extends Component {
   }
 }
 
+Todos.propTypes = {
+  loadTodos: PropTypes.func.isRequired,
+  todos: PropTypes.shape({
+    data: PropTypes.array
+  })
+};
+
 const mapStateToProps = ({ todos }) => ({
   todos
 });
@@ -40,4 +48,4 @@ const mapDispatchToProps = {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Home);
+)(Todos);

@@ -1,4 +1,4 @@
-import Home from './components/Home';
+import Home from './containers/Todos';
 import NotFound from './components/NotFound';
 
 export const publicRoutes = [

@@ -5,7 +5,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import PrivateRoute from '../../components/PrivateRoute';
+import PrivateRoute from '../PrivateRoute';
 import { privateRoutes, publicRoutes } from '../../routes';
 
 const App = () => (
