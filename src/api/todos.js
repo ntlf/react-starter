@@ -2,6 +2,7 @@ import delay from './delay';
 
 export const getTodos = async () => {
   // TODO network
+  // const todos = await axios.get('/api/todos');
 
   await delay(1000);
 
