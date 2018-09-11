@@ -12,5 +12,6 @@ Object {
       "text": "Two",
     },
   ],
+  "isFetching": false,
 }
 `;

@@ -1,5 +1,5 @@
 import todos from './todos';
-import { LOAD_TODOS } from '../actions/types';
+import { FETCH_TODOS_SUCCESS } from '../actions/types';
 
 describe('todos reducer', () => {
   it('is a function', () => {
@@ -19,8 +19,8 @@ describe('todos reducer', () => {
     ];
 
     const action = {
-      type: LOAD_TODOS,
-      payload: data
+      type: FETCH_TODOS_SUCCESS,
+      payload: { data }
     };
     expect(todos({}, action)).toMatchSnapshot();
   });

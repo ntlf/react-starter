@@ -1,19 +1,16 @@
-import delay from './delay';
+import axios from 'axios';
 
 export const getTodos = async () => {
-  // TODO network
-  // const todos = await axios.get('/api/todos');
+  const response = await axios.get(
+    'https://wt-a339e6290d2b75021e179abd37d83555-0.sandbox.auth0-extend.com/react-ws/'
+  );
 
-  await delay(1000);
+  return response.data;
+};
 
-  return [
-    {
-      id: '1',
-      text: 'One'
-    },
-    {
-      id: '2',
-      text: 'Two'
-    }
-  ];
+export const postTodo = async todo => {
+  await axios.post(
+    'https://wt-a339e6290d2b75021e179abd37d83555-0.sandbox.auth0-extend.com/react-ws/',
+    todo
+  );
 };

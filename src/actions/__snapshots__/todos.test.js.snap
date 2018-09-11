@@ -3,17 +3,22 @@
 exports[`todos actions loadTodos should invoke actions correctly 1`] = `
 Array [
   Object {
-    "payload": Array [
-      Object {
-        "id": "1",
-        "text": "One",
-      },
-      Object {
-        "id": "2",
-        "text": "Two",
-      },
-    ],
-    "type": "LOAD_TODOS",
+    "type": "FETCH_TODOS_REQUEST",
+  },
+  Object {
+    "payload": Object {
+      "data": Array [
+        Object {
+          "id": "1",
+          "text": "One",
+        },
+        Object {
+          "id": "2",
+          "text": "Two",
+        },
+      ],
+    },
+    "type": "FETCH_TODOS_SUCCESS",
   },
 ]
 `;
