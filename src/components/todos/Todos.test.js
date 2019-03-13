@@ -5,6 +5,9 @@ import { Todos } from './Todos';
 function setup() {
   return {
     loadTodos: jest.fn(),
+    todos: {
+      data: [],
+    },
   };
 }
 
