@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './NotFound.module.scss';
+import Content from '../common/Content';
 
-const NotFound = () => <div className={styles.NotFound}>404 - NotFound</div>;
+const NotFound = () => <Content>404 - NotFound</Content>;
 
 export default NotFound;

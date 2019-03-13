@@ -1,16 +1,25 @@
-import Todos from './containers/todos/Todos';
+import Home from './components/home/Home';
+import Login from './components/auth/Login';
 import NotFound from './components/not-found/NotFound';
+import Logout from './components/auth/Logout';
 
 export const publicRoutes = [
-  // Login
+  {
+    path: '/login',
+    component: Login,
+  },
 ];
 
 export const privateRoutes = [
   {
-    path: '/todos',
-    component: Todos
+    path: '/home',
+    component: Home,
   },
   {
-    component: NotFound
-  }
+    path: '/logout',
+    component: Logout,
+  },
+  {
+    component: NotFound,
+  },
 ];

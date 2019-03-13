@@ -13,7 +13,7 @@ Array [
         "text": "Two",
       },
     ],
-    "type": "LOAD_TODOS",
+    "type": "TODOS_RECEIVED",
   },
 ]
 `;

@@ -1,10 +1,10 @@
 import configureMockStore from 'redux-mock-store';
-import thunk from 'redux-thunk';
+import { getDefaultMiddleware } from 'redux-starter-kit';
 import { loadTodos } from './todos';
 
 jest.mock('../api/todos');
 
-const middlewares = [thunk];
+const middlewares = [...getDefaultMiddleware()];
 const mockStore = configureMockStore(middlewares);
 
 describe('todos actions', () => {

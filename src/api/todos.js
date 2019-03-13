@@ -1,4 +1,5 @@
 import delay from './delay';
+import { getTodos as mockedGetTodos } from './__mocks__/todos';
 
 export const getTodos = async () => {
   // TODO network
@@ -6,14 +7,5 @@ export const getTodos = async () => {
 
   await delay(1000);
 
-  return [
-    {
-      id: '1',
-      text: 'One'
-    },
-    {
-      id: '2',
-      text: 'Two'
-    }
-  ];
+  return mockedGetTodos();
 };

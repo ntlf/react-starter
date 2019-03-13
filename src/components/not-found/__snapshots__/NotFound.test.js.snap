@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
+.emotion-0 {
+  padding: 1em;
+}
+
 <div
-  className="NotFound"
+  className="emotion-0"
 >
   404 - NotFound
 </div>

@@ -1,17 +1,16 @@
-import { LOAD_TODOS } from '../actions/types';
+import { createReducer } from 'redux-starter-kit';
+import { todosReceived } from '../actions/todos';
 
-const initialState = {
-  data: []
-};
-
-export default (state = initialState, action) => {
-  switch (action.type) {
-    case LOAD_TODOS:
-      return {
-        ...state,
-        data: [...action.payload]
-      };
-    default:
-      return state;
+const todos = createReducer(
+  {
+    data: [],
+  },
+  {
+    [todosReceived]: (state, action) => ({
+      ...state,
+      data: action.payload,
+    }),
   }
-};
+);
+
+export default todos;
