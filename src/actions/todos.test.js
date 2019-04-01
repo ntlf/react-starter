@@ -13,12 +13,12 @@ describe('todos actions', () => {
       expect(loadTodos.constructor).toBe(Function);
     });
 
-    it('should invoke actions correctly', () => {
+    it('should invoke actions correctly', async () => {
       const store = mockStore({ todos: {} });
 
-      return store.dispatch(loadTodos()).then(() => {
-        expect(store.getActions()).toMatchSnapshot();
-      });
+      await store.dispatch(loadTodos());
+
+      expect(store.getActions()).toMatchSnapshot();
     });
   });
 });
